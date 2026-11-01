@@ -1,0 +1,15 @@
+# Publish an explicit allowlist. Local diagnostics, paths and audio session IDs stay private.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/CoreAudio.cs
+!/Guard.ps1
+!/Start.ps1
+!/Stop.ps1
+!/Start.cmd
+!/Stop.cmd
+!/tests/
+/tests/*
+!/tests/Smoke.ps1
