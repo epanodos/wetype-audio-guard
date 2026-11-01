@@ -12,7 +12,7 @@ if ($Foreground) {
 $existing = $null
 try {
     $existing = [Threading.Mutex]::OpenExisting('Local\WeTypeAudioFix-Guard-v1')
-    Write-Host 'WeType Harmony is already running (possibly from another folder).'
+    Write-Host 'WeType Audio Guard is already running (possibly from another folder).'
     exit
 } catch [Threading.WaitHandleCannotBeOpenedException] {
     # No instance is running.
@@ -27,7 +27,7 @@ $child = Start-Process -FilePath $engine -ArgumentList $arguments `
     -WorkingDirectory $PSScriptRoot -WindowStyle Hidden -PassThru `
     -RedirectStandardError (Join-Path $PSScriptRoot 'error.log')
 if ($child.WaitForExit(2000)) {
-    throw 'WeType Harmony exited during startup. Check error.log and guard.log in this folder.'
+    throw 'WeType Audio Guard exited during startup. Check error.log and guard.log in this folder.'
 }
-Write-Host ('WeType Harmony started. PID: ' + $child.Id)
+Write-Host ('WeType Audio Guard started. PID: ' + $child.Id)
 Write-Host 'Use Stop.cmd in this folder to stop it. No startup task was installed.'
