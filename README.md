@@ -1,4 +1,4 @@
-# WeType Audio Guard
+# WeType Harmony
 
 用微信输入法的语音输入时，后台播放的音乐会被静音，没法一边听歌一边说话。所以做了这个小工具，自动恢复音乐，并在 GitHub 开源，方便有同样需求的人直接使用。
 
@@ -6,7 +6,7 @@
 
 ## 使用方法
 
-1. 在 [Releases](https://github.com/epanodos/wetype-audio-guard/releases/latest) 下载 ZIP 并解压。
+1. 在 [Releases](https://github.com/epanodos/wetype-harmony/releases/latest) 下载 ZIP 并解压。
 2. 双击 `Start.cmd`，工具会在后台运行。
 3. 播放音乐，正常使用微信输入法的语音输入。
 4. 双击同一文件夹中的 `Stop.cmd` 停止运行。
@@ -51,7 +51,7 @@
 powershell.exe -NoProfile -File .\tests\Smoke.ps1
 ```
 
-欢迎通过 [Issues](https://github.com/epanodos/wetype-audio-guard/issues) 反馈问题，或提交 Pull Request。
+欢迎通过 [Issues](https://github.com/epanodos/wetype-harmony/issues) 反馈问题，或提交 Pull Request。
 
 ## 许可证
 
